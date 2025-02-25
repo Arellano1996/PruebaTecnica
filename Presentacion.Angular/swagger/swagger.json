@@ -1,0 +1,1362 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+      "title": "Presentacion",
+      "version": "1.0"
+    },
+    "servers": [
+      {
+        "url": "https://localhost:7144/"
+      }
+    ],
+    "paths": {
+      "/api/CapacidadDemandadaYRAPEn2024BCAPreliminarv20250127": {
+        "get": {
+          "tags": [
+            "CapacidadDemandadaYRAPEn2024BCAPreliminarv20250127"
+          ],
+          "responses": {
+            "200": {
+              "description": "OK",
+              "content": {
+                "text/plain": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCAPreliminarv20250127"
+                    }
+                  }
+                },
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCAPreliminarv20250127"
+                    }
+                  }
+                },
+                "text/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCAPreliminarv20250127"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "post": {
+          "tags": [
+            "CapacidadDemandadaYRAPEn2024BCAPreliminarv20250127"
+          ],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCAPreliminarv20250127"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCAPreliminarv20250127"
+                }
+              },
+              "application/*+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCAPreliminarv20250127"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "OK",
+              "content": {
+                "text/plain": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCAPreliminarv20250127"
+                  }
+                },
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCAPreliminarv20250127"
+                  }
+                },
+                "text/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCAPreliminarv20250127"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/CapacidadDemandadaYRAPEn2024BCAPreliminarv20250127/{id}": {
+        "get": {
+          "tags": [
+            "CapacidadDemandadaYRAPEn2024BCAPreliminarv20250127"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "format": "uuid"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK",
+              "content": {
+                "text/plain": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCAPreliminarv20250127"
+                  }
+                },
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCAPreliminarv20250127"
+                  }
+                },
+                "text/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCAPreliminarv20250127"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "put": {
+          "tags": [
+            "CapacidadDemandadaYRAPEn2024BCAPreliminarv20250127"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "format": "uuid"
+              }
+            }
+          ],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCAPreliminarv20250127"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCAPreliminarv20250127"
+                }
+              },
+              "application/*+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCAPreliminarv20250127"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        },
+        "delete": {
+          "tags": [
+            "CapacidadDemandadaYRAPEn2024BCAPreliminarv20250127"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "format": "uuid"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      },
+      "/api/CapacidadDemandadaYRAPEn2024BCAv20250131": {
+        "get": {
+          "tags": [
+            "CapacidadDemandadaYRAPEn2024BCAv20250131"
+          ],
+          "responses": {
+            "200": {
+              "description": "OK",
+              "content": {
+                "text/plain": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCAv20250131"
+                    }
+                  }
+                },
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCAv20250131"
+                    }
+                  }
+                },
+                "text/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCAv20250131"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "post": {
+          "tags": [
+            "CapacidadDemandadaYRAPEn2024BCAv20250131"
+          ],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCAv20250131"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCAv20250131"
+                }
+              },
+              "application/*+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCAv20250131"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "OK",
+              "content": {
+                "text/plain": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCAv20250131"
+                  }
+                },
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCAv20250131"
+                  }
+                },
+                "text/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCAv20250131"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/CapacidadDemandadaYRAPEn2024BCAv20250131/{id}": {
+        "get": {
+          "tags": [
+            "CapacidadDemandadaYRAPEn2024BCAv20250131"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "format": "uuid"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK",
+              "content": {
+                "text/plain": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCAv20250131"
+                  }
+                },
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCAv20250131"
+                  }
+                },
+                "text/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCAv20250131"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "put": {
+          "tags": [
+            "CapacidadDemandadaYRAPEn2024BCAv20250131"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "format": "uuid"
+              }
+            }
+          ],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCAv20250131"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCAv20250131"
+                }
+              },
+              "application/*+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCAv20250131"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        },
+        "delete": {
+          "tags": [
+            "CapacidadDemandadaYRAPEn2024BCAv20250131"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "format": "uuid"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      },
+      "/api/CapacidadDemandadaYRAPEn2024BCSPreliminarv20250127": {
+        "get": {
+          "tags": [
+            "CapacidadDemandadaYRAPEn2024BCSPreliminarv20250127"
+          ],
+          "responses": {
+            "200": {
+              "description": "OK",
+              "content": {
+                "text/plain": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCSPreliminarv20250127"
+                    }
+                  }
+                },
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCSPreliminarv20250127"
+                    }
+                  }
+                },
+                "text/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCSPreliminarv20250127"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "post": {
+          "tags": [
+            "CapacidadDemandadaYRAPEn2024BCSPreliminarv20250127"
+          ],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCSPreliminarv20250127"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCSPreliminarv20250127"
+                }
+              },
+              "application/*+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCSPreliminarv20250127"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "OK",
+              "content": {
+                "text/plain": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCSPreliminarv20250127"
+                  }
+                },
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCSPreliminarv20250127"
+                  }
+                },
+                "text/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCSPreliminarv20250127"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/CapacidadDemandadaYRAPEn2024BCSPreliminarv20250127/{id}": {
+        "get": {
+          "tags": [
+            "CapacidadDemandadaYRAPEn2024BCSPreliminarv20250127"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "format": "uuid"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK",
+              "content": {
+                "text/plain": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCSPreliminarv20250127"
+                  }
+                },
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCSPreliminarv20250127"
+                  }
+                },
+                "text/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCSPreliminarv20250127"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "put": {
+          "tags": [
+            "CapacidadDemandadaYRAPEn2024BCSPreliminarv20250127"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "format": "uuid"
+              }
+            }
+          ],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCSPreliminarv20250127"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCSPreliminarv20250127"
+                }
+              },
+              "application/*+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCSPreliminarv20250127"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        },
+        "delete": {
+          "tags": [
+            "CapacidadDemandadaYRAPEn2024BCSPreliminarv20250127"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "format": "uuid"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      },
+      "/api/CapacidadDemandadaYRAPEn2024BCSv20250131": {
+        "get": {
+          "tags": [
+            "CapacidadDemandadaYRAPEn2024BCSv20250131"
+          ],
+          "responses": {
+            "200": {
+              "description": "OK",
+              "content": {
+                "text/plain": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCSv20250131"
+                    }
+                  }
+                },
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCSv20250131"
+                    }
+                  }
+                },
+                "text/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCSv20250131"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "post": {
+          "tags": [
+            "CapacidadDemandadaYRAPEn2024BCSv20250131"
+          ],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCSv20250131"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCSv20250131"
+                }
+              },
+              "application/*+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCSv20250131"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "OK",
+              "content": {
+                "text/plain": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCSv20250131"
+                  }
+                },
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCSv20250131"
+                  }
+                },
+                "text/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCSv20250131"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/CapacidadDemandadaYRAPEn2024BCSv20250131/{id}": {
+        "get": {
+          "tags": [
+            "CapacidadDemandadaYRAPEn2024BCSv20250131"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "format": "uuid"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK",
+              "content": {
+                "text/plain": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCSv20250131"
+                  }
+                },
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCSv20250131"
+                  }
+                },
+                "text/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCSv20250131"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "put": {
+          "tags": [
+            "CapacidadDemandadaYRAPEn2024BCSv20250131"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "format": "uuid"
+              }
+            }
+          ],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCSv20250131"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCSv20250131"
+                }
+              },
+              "application/*+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024BCSv20250131"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        },
+        "delete": {
+          "tags": [
+            "CapacidadDemandadaYRAPEn2024BCSv20250131"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "format": "uuid"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      },
+      "/api/CapacidadDemandadaYRAPEn2024SINPreliminarv20250127": {
+        "get": {
+          "tags": [
+            "CapacidadDemandadaYRAPEn2024SINPreliminarv20250127"
+          ],
+          "responses": {
+            "200": {
+              "description": "OK",
+              "content": {
+                "text/plain": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024SINPreliminarv20250127"
+                    }
+                  }
+                },
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024SINPreliminarv20250127"
+                    }
+                  }
+                },
+                "text/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024SINPreliminarv20250127"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "post": {
+          "tags": [
+            "CapacidadDemandadaYRAPEn2024SINPreliminarv20250127"
+          ],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024SINPreliminarv20250127"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024SINPreliminarv20250127"
+                }
+              },
+              "application/*+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024SINPreliminarv20250127"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "OK",
+              "content": {
+                "text/plain": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024SINPreliminarv20250127"
+                  }
+                },
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024SINPreliminarv20250127"
+                  }
+                },
+                "text/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024SINPreliminarv20250127"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/CapacidadDemandadaYRAPEn2024SINPreliminarv20250127/{id}": {
+        "get": {
+          "tags": [
+            "CapacidadDemandadaYRAPEn2024SINPreliminarv20250127"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "format": "uuid"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK",
+              "content": {
+                "text/plain": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024SINPreliminarv20250127"
+                  }
+                },
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024SINPreliminarv20250127"
+                  }
+                },
+                "text/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024SINPreliminarv20250127"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "put": {
+          "tags": [
+            "CapacidadDemandadaYRAPEn2024SINPreliminarv20250127"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "format": "uuid"
+              }
+            }
+          ],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024SINPreliminarv20250127"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024SINPreliminarv20250127"
+                }
+              },
+              "application/*+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024SINPreliminarv20250127"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        },
+        "delete": {
+          "tags": [
+            "CapacidadDemandadaYRAPEn2024SINPreliminarv20250127"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "format": "uuid"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      },
+      "/api/CapacidadDemandadaYRAPEn2024SINv20250131": {
+        "get": {
+          "tags": [
+            "CapacidadDemandadaYRAPEn2024SINv20250131"
+          ],
+          "responses": {
+            "200": {
+              "description": "OK",
+              "content": {
+                "text/plain": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024SINv20250131"
+                    }
+                  }
+                },
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024SINv20250131"
+                    }
+                  }
+                },
+                "text/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024SINv20250131"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "post": {
+          "tags": [
+            "CapacidadDemandadaYRAPEn2024SINv20250131"
+          ],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024SINv20250131"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024SINv20250131"
+                }
+              },
+              "application/*+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024SINv20250131"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "OK",
+              "content": {
+                "text/plain": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024SINv20250131"
+                  }
+                },
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024SINv20250131"
+                  }
+                },
+                "text/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024SINv20250131"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/CapacidadDemandadaYRAPEn2024SINv20250131/{id}": {
+        "get": {
+          "tags": [
+            "CapacidadDemandadaYRAPEn2024SINv20250131"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "format": "uuid"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK",
+              "content": {
+                "text/plain": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024SINv20250131"
+                  }
+                },
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024SINv20250131"
+                  }
+                },
+                "text/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024SINv20250131"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "put": {
+          "tags": [
+            "CapacidadDemandadaYRAPEn2024SINv20250131"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "format": "uuid"
+              }
+            }
+          ],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024SINv20250131"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024SINv20250131"
+                }
+              },
+              "application/*+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapacidadDemandadaYRAPEn2024SINv20250131"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        },
+        "delete": {
+          "tags": [
+            "CapacidadDemandadaYRAPEn2024SINv20250131"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "format": "uuid"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "CapacidadDemandadaYRAPEn2024BCAPreliminarv20250127": {
+          "required": [
+            "participante",
+            "subCuentaDelParticipante",
+            "zonaDePotencia"
+          ],
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "zonaDePotencia": {
+              "type": "string",
+              "nullable": true
+            },
+            "participante": {
+              "type": "string",
+              "nullable": true
+            },
+            "subCuentaDelParticipante": {
+              "type": "string",
+              "nullable": true
+            },
+            "capacidadDemandadaMW": {
+              "type": "number",
+              "format": "double"
+            },
+            "requisitoAnualDePotenciaMWAnio": {
+              "type": "number",
+              "format": "double"
+            },
+            "valorDelRequisitoAnualDePotenciaEficienteMWAnio": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          "additionalProperties": false
+        },
+        "CapacidadDemandadaYRAPEn2024BCAv20250131": {
+          "required": [
+            "participante",
+            "subCuentaDelParticipante",
+            "zonaDePotencia"
+          ],
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "zonaDePotencia": {
+              "type": "string",
+              "nullable": true
+            },
+            "participante": {
+              "type": "string",
+              "nullable": true
+            },
+            "subCuentaDelParticipante": {
+              "type": "string",
+              "nullable": true
+            },
+            "capacidadDemandadaMW": {
+              "type": "number",
+              "format": "double"
+            },
+            "requisitoAnualDePotenciaMWAnio": {
+              "type": "number",
+              "format": "double"
+            },
+            "valorDelRequisitoAnualDePotenciaEficienteMWAnio": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          "additionalProperties": false
+        },
+        "CapacidadDemandadaYRAPEn2024BCSPreliminarv20250127": {
+          "required": [
+            "participante",
+            "subCuentaDelParticipante",
+            "zonaDePotencia"
+          ],
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "zonaDePotencia": {
+              "type": "string",
+              "nullable": true
+            },
+            "participante": {
+              "type": "string",
+              "nullable": true
+            },
+            "subCuentaDelParticipante": {
+              "type": "string",
+              "nullable": true
+            },
+            "capacidadDemandadaMW": {
+              "type": "number",
+              "format": "double"
+            },
+            "requisitoAnualDePotenciaMWAnio": {
+              "type": "number",
+              "format": "double"
+            },
+            "valorDelRequisitoAnualDePotenciaEficienteMWAnio": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          "additionalProperties": false
+        },
+        "CapacidadDemandadaYRAPEn2024BCSv20250131": {
+          "required": [
+            "participante",
+            "subCuentaDelParticipante",
+            "zonaDePotencia"
+          ],
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "zonaDePotencia": {
+              "type": "string",
+              "nullable": true
+            },
+            "participante": {
+              "type": "string",
+              "nullable": true
+            },
+            "subCuentaDelParticipante": {
+              "type": "string",
+              "nullable": true
+            },
+            "capacidadDemandadaMW": {
+              "type": "number",
+              "format": "double"
+            },
+            "requisitoAnualDePotenciaMWAnio": {
+              "type": "number",
+              "format": "double"
+            },
+            "valorDelRequisitoAnualDePotenciaEficienteMWAnio": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          "additionalProperties": false
+        },
+        "CapacidadDemandadaYRAPEn2024SINPreliminarv20250127": {
+          "required": [
+            "participante",
+            "subCuentaDelParticipante",
+            "zonaDePotencia"
+          ],
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "zonaDePotencia": {
+              "type": "string",
+              "nullable": true
+            },
+            "participante": {
+              "type": "string",
+              "nullable": true
+            },
+            "subCuentaDelParticipante": {
+              "type": "string",
+              "nullable": true
+            },
+            "capacidadDemandadaMW": {
+              "type": "number",
+              "format": "double"
+            },
+            "requisitoAnualDePotenciaMWAnio": {
+              "type": "number",
+              "format": "double"
+            },
+            "valorDelRequisitoAnualDePotenciaEficienteMWAnio": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          "additionalProperties": false
+        },
+        "CapacidadDemandadaYRAPEn2024SINv20250131": {
+          "required": [
+            "participante",
+            "subCuentaDelParticipante",
+            "zonaDePotencia"
+          ],
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "zonaDePotencia": {
+              "type": "string",
+              "nullable": true
+            },
+            "participante": {
+              "type": "string",
+              "nullable": true
+            },
+            "subCuentaDelParticipante": {
+              "type": "string",
+              "nullable": true
+            },
+            "capacidadDemandadaMW": {
+              "type": "number",
+              "format": "double"
+            },
+            "requisitoAnualDePotenciaMWAnio": {
+              "type": "number",
+              "format": "double"
+            },
+            "valorDelRequisitoAnualDePotenciaEficienteMWAnio": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    }
+  }
