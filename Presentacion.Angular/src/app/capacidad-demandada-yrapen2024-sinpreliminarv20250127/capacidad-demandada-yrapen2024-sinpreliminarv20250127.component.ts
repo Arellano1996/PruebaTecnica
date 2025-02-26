@@ -5,10 +5,12 @@ import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { SistemaInterconectadoNacionalPreliminarInterface } from './interfaces/sistema-interconectado-nacional-preliminar.interface';
 import { MatSort, MatSortModule, Sort } from '@angular/material/sort';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @Component({
   selector: 'app-capacidad-demandada-yrapen2024-sinpreliminarv20250127',
-  imports: [MatTableModule, MatSortModule, MatPaginatorModule],
+  imports: [MatTableModule, MatSortModule, MatPaginatorModule, MatFormFieldModule, MatInputModule, MatTableModule],
   templateUrl: './capacidad-demandada-yrapen2024-sinpreliminarv20250127.component.html',
   //styleUrl: './capacidad-demandada-yrapen2024-sinpreliminarv20250127.component.css'
 })
@@ -56,5 +58,10 @@ export default class CapacidadDemandadaYRAPEn2024SINPreliminarv20250127Component
     } else {
       this._liveAnnouncer.announce('Sorting cleared');
     }
+  }
+
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 }

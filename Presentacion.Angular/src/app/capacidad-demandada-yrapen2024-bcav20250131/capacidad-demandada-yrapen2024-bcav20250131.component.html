@@ -5,6 +5,11 @@
     </h1>
 </div>
 
+<mat-form-field>
+  <mat-label>Filtro</mat-label>
+  <input matInput (keyup)="applyFilter($event)" placeholder="Ex. termino" #input>
+</mat-form-field>
+
 <div class="overflow-auto">
     <table mat-table [dataSource]="dataSource" matSort (matSortChange)="announceSortChange($event)"
            class="mat-elevation-z8">

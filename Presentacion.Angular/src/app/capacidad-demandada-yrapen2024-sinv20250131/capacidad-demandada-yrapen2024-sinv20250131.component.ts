@@ -6,10 +6,14 @@ import { LiveAnnouncer } from '@angular/cdk/a11y';
 import { MatSort, Sort, MatSortModule } from '@angular/material/sort';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 @Component({
   selector: 'app-capacidad-demandada-yrapen2024-sinv20250131',
-  imports: [MatTableModule, MatSortModule, MatPaginatorModule],
+  imports: [MatTableModule, MatSortModule, MatPaginatorModule, MatFormFieldModule, MatInputModule, MatTableModule],
+
+  
   templateUrl: './capacidad-demandada-yrapen2024-sinv20250131.component.html',
 })
 export default class CapacidadDemandadaYRAPEn2024SINv20250131Component implements OnInit, AfterViewInit {
@@ -57,5 +61,10 @@ export default class CapacidadDemandadaYRAPEn2024SINv20250131Component implement
     } else {
       this._liveAnnouncer.announce('Sorting cleared');
     }
+  }
+
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 }

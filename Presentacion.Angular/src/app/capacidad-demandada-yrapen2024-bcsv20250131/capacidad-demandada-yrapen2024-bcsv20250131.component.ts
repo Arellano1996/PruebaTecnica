@@ -5,10 +5,12 @@ import { SistemaBajaCaliforniaSurInterface } from './interfaces/sistema-baja-cal
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatSort, MatSortModule, Sort } from '@angular/material/sort';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @Component({
   selector: 'app-capacidad-demandada-yrapen2024-bcsv20250131',
-  imports: [MatTableModule, MatSortModule, MatPaginatorModule],
+  imports: [MatTableModule, MatSortModule, MatPaginatorModule, MatFormFieldModule, MatInputModule, MatTableModule],
   templateUrl: './capacidad-demandada-yrapen2024-bcsv20250131.component.html',
   //styleUrl: './capacidad-demandada-yrapen2024-bcsv20250131.component.css'
 })
@@ -56,5 +58,10 @@ private _liveAnnouncer = inject(LiveAnnouncer);
     } else {
       this._liveAnnouncer.announce('Sorting cleared');
     }
+  }
+
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 }
