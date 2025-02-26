@@ -1,1 +1,79 @@
-<p>capacidad-demandada-yrapen2024-bcspreliminarv20250127 works!</p>
+<div class="p-6 bg-white">
+    <h1 class="text-xl text-gray-700">
+        Zona de Potencia Sistema Interconectado Nacional 
+        <span class="text-sm ml-2 text-gray-500">Capacidad Demandada y RAP en 2024 SIN (v2025 01 31)</span>
+    </h1>
+</div>
+
+<div class="overflow-auto">
+    <table mat-table [dataSource]="dataSource" matSort (matSortChange)="announceSortChange($event)"
+           class="mat-elevation-z8">
+    
+      <!-- id Column -->
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Ordenar por id">
+          Id
+        </th>
+        <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+      </ng-container>
+    
+      <!-- zonaDePotencia Column -->
+      <ng-container matColumnDef="zonaDePotencia">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Ordenar por Zona de Potencia">
+            Zona de Potencia
+        </th>
+        <td mat-cell *matCellDef="let element"> {{element.zonaDePotencia}} </td>
+      </ng-container>
+    
+      <!-- participante Column -->
+      <ng-container matColumnDef="participante">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Ordenar por Participante">
+            Participante
+        </th>
+        <td mat-cell *matCellDef="let element"> {{element.participante}} </td>
+      </ng-container>
+    
+      <!-- SubCuenta del Participante Column -->
+      <ng-container matColumnDef="subCuentaDelParticipante">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Ordenar por SubCuenta del Participante">
+            SubCuenta del Participante
+        </th>
+        <td mat-cell *matCellDef="let element"> {{element.subCuentaDelParticipante}} </td>
+      </ng-container>
+    
+      <!-- Capacidad Demandada MW Column -->
+      <ng-container matColumnDef="capacidadDemandadaMW">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Ordenar por Capacidad Demandada MW">
+            Capacidad Demandada MW
+        </th>
+        <td mat-cell *matCellDef="let element"> {{element.capacidadDemandadaMW}} </td>
+      </ng-container>
+    
+      <!-- Requisito Anual De Potencia MW Año Column -->
+      <ng-container matColumnDef="requisitoAnualDePotenciaMWAnio">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Ordenar por Requisito Anual De Potencia MW Año">
+            Requisito Anual De Potencia MW Año
+        </th>
+        <td mat-cell *matCellDef="let element"> {{element.requisitoAnualDePotenciaMWAnio}} </td>
+      </ng-container>
+    
+      <!-- Valor Del Requisito Anual De Potencia Eficiente MW Año Column -->
+      <ng-container matColumnDef="valorDelRequisitoAnualDePotenciaEficienteMWAnio">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Ordenar por Valor Del Requisito Anual De Potencia Eficiente MW Año">
+            Valor Del Requisito Anual De Potencia Eficiente MW Año
+        </th>
+        <td mat-cell *matCellDef="let element"> {{element.valorDelRequisitoAnualDePotenciaEficienteMWAnio}} </td>
+      </ng-container>
+    
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+</div>
+
+<div class="w-full">
+    <mat-paginator [length]="100"
+                    [pageSize]="10"
+                    [pageSizeOptions]="[5, 10, 25, 100]"
+                    aria-label="Seleccionar página">
+    </mat-paginator>
+</div>
